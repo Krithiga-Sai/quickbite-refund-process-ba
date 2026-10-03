@@ -45,7 +45,6 @@ QuickBite is a fictional client. All thresholds, time limits and targets in this
 | Product manager | Higher customer satisfaction; lower cost per ticket |
 
 
-
 ## 7. Process Overview
 The current process is modelled in `process/as-is.md` (6 pain points identified) and the proposed process in `process/to-be.md`.
 
@@ -54,3 +53,32 @@ The current process is modelled in `process/as-is.md` (6 pain points identified)
 
 ## 9. Business Rules and Edge Cases
 8 business rules and 7 edge cases are documented in `docs/business-rules.md`.
+
+
+## 10. Assumptions, Constraints and Risks
+
+| ID | Type | Description | Mitigation |
+|---|---|---|---|
+| R-01 | Risk | Auto-approval may increase fraudulent claims | Value cap of Rs 150, claim-frequency limit, fraud flag (FR-12) |
+| R-02 | Risk | Agents may override automated decisions inconsistently | Override reason must be recorded (RULE-08), audit log (NFR-02) |
+| R-03 | Constraint | Payment gateway refund timelines are outside QuickBite's control | Show status updates and expected timelines (FR-07) |
+| R-04 | Assumption | Photo evidence is a reliable signal for item-related claims | Review sample of auto-approved claims periodically |
+| R-05 | Assumption | All thresholds and targets are estimates | Validate with the client before build |
+
+## 11. Success Metrics (KPIs)
+
+No baseline data exists for this fictional client, so targets are illustrative.
+
+| KPI | Definition | Illustrative target |
+|---|---|---|
+| Average refund time | Time from claim submission to money returned, for eligible low-value claims | Under 24 hours |
+| Auto-approval rate | Share of claims approved without agent review | To be set after a pilot |
+| Refund tickets per 1,000 orders | Support tickets about refund status or rejection | Decrease versus baseline |
+| Coupon-in-place-of-refund rate | Share of refunds issued as coupons the customer did not choose | Zero |
+| Post-refund satisfaction | Customer rating after a refund is completed | Increase versus baseline |
+
+## 12. Appendices
+- User stories: `requirements/user-stories.md` (11 stories)
+- Traceability matrix: `requirements/traceability-matrix.csv`
+- Review research: `research/review-themes.md`
+- Stakeholder notes: `docs/stakeholders.md` (stakeholder table is in section 6 above)
