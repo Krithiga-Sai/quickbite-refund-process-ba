@@ -81,4 +81,4 @@ No baseline data exists for this fictional client, so targets are illustrative.
 - User stories: `requirements/user-stories.md` (11 stories)
 - Traceability matrix: `requirements/traceability-matrix.csv`
 - Review research: `research/review-themes.md`
-- Stakeholder notes: `docs/stakeholders.md` (stakeholder table is in section 6 above)
+
