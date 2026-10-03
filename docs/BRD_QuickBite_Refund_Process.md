@@ -43,3 +43,14 @@ QuickBite is a fictional client. All thresholds, time limits and targets in this
 | Finance team | Accurate reconciliation; low refund leakage |
 | Fraud and risk team | Ability to detect repeat abuse |
 | Product manager | Higher customer satisfaction; lower cost per ticket |
+
+
+
+## 7. Process Overview
+The current process is modelled in `process/as-is.md` (6 pain points identified) and the proposed process in `process/to-be.md`.
+
+## 8. Requirements
+15 requirements (12 functional, 3 non-functional) are listed with priorities and sources in `requirements/requirements-catalogue.md`.
+
+## 9. Business Rules and Edge Cases
+8 business rules and 7 edge cases are documented in `docs/business-rules.md`.
